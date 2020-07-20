@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>商店列表</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="../upload/o2o-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<link rel="stylesheet" type="text/css"
+	href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
+
+<!-- <link rel="stylesheet"
+	href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+<link rel="stylesheet"
+	href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css"> -->
+
+<link rel="stylesheet" href="../resources/css/common/common.css">
+<link rel="stylesheet" href="../resources/css/shop/shoplist.css">
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Inter|Merriweather&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="entire-container-background">
+<div id="global-id-screen-container">
+	<div class="nav-bar-o2o">
+		<div class="title-container">
+			<span class="page-title-o2o">Shop List</span>
+		</div>
+	</div>
+
+	<div class="ui container class-page-container class-regular-page-container">
+		<div class="content">
+			<div class="content-block">
+				<div class="introduction">
+
+					<div class="class-cheeting-text">
+						Welcome, <span id="user-name"></span>
+					</div>
+
+					<!-- 
+					<div class="ui teal labeled icon button right floated">
+						<a class="button-link-white" href="/o2o/shopadmin/shopoperation">Create
+							New Shop</a> <i class="add icon"></i>
+					</div>
+					 -->
+
+				</div>
+
+				<div class="ui compact menu" id="up-menu-id">
+					<a href="/o2o/local/accountbind?usertype=2" class="item"
+						id="item-menu-strong-id1"> <i class="user icon"></i> bind
+					</a> <a href="/o2o/local/changepsw?usertype=2"
+						class="item item-menu-strong" id="bindOrChange"> <i
+						class="key icon"></i> password
+					</a> <a class="item item-menu-strong" href="#" id="log-out"
+						usertype="2"> <i class="sign out icon"></i> sign out
+					</a>
+				</div>
+
+				<div class="ui hidden divider"></div>
+
+				<!-- <div class="row row-shop">
+					<div class="col-40">商店名称</div>
+					<div class="col-40">状态</div>
+					<div class="col-20">操作</div>
+				</div> -->
+
+				<!-- dynamic component, get data from DB -->
+				<div class="shop-wrap"></div>
+
+				<div class="ui icon bottom dropdown button" tabindex="0"
+					id="plus-button">
+					<i class="plus icon" id="plus-icon"></i>
+
+					<div class="ui vertical menu transition hidden" tabindex="-1">
+						<a class="item active"> <i class="gamepad icon"></i> Games
+						</a> <a class="item"> <i class="video camera icon"></i> Channels
+						</a> <a class="item"> <i class="video play icon"></i> Videos
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+			integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
+		<script type='text/javascript'
+			src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+
+		<!--
+	<script type='text/javascript'
+		src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+	<script type='text/javascript'
+		src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>  -->
+
+		<script type='text/javascript' src='../resources/js/shop/shoplist.js'
+			charset='utf-8'></script>
+		<script type='text/javascript' src='../resources/js/local/logout.js'
+			charset='utf-8'></script>
+</body>
+</html>

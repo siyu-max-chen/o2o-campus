@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+#icon-container {
+	max-width:90%;
+	text-align: center;
+	padding-top: 3vh;
+	margin-bottom: 3vh;
+}
+
+#id-icon-container-inner {
+	border-bottom: .5px solid rgba(100,100,100,0.8);
+	max-width:375px;
+	margin-left:auto!important;
+	margin-right:auto!important;
+}
+
+#class-page-container {
+	box-shadow: 0px -3px 2px 0px rgb(50,50,50);
+}
+
+.class-title-container {
+	margin-top: 5vh;
+	margin-bottom: 3vh;
+	margin-left:1.5rem;
+	font-size: 125%;
+	padding: 1vh 0 1vh 2vw;
+	font-family: var(--global-font-family-nav-bar);
+	border-left: 8px solid rgba(0,0,0,0.8);
+	/*** box-shadow: 0 2px 3px -1px rgb(100, 100, 100); ***/
+}
+
+
+
+@media only screen and (min-width:480px){ 
+    .ui.container#class-page-container {
+		width: 480px;
+	}
+}
+
+.ui.grid>.row>.column.index-catagory-button-container {
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+}
+
+.shop-classify {
+	transition: 0.3s;
+	overflow: hidden;
+    user-select: none;
+    position: relative;
+}
+
+.index-category-icon {
+	width:auto;
+	height:auto;
+	max-width:75%;
+	max-height:100%;
+}
+
+.button-icon-index {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.text-icon-desc {
+	text-align: center;
+	font-size:90%;
+}
+
+.class-page-container.class-page-container-modify {
+	padding-top:6vh;
+}
+
+
+/*********************	responsive 部分	*******************/
+@media screen and (min-width:500px){
+    .hero {
+		z-index: 1;
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: url("/o2o/upload/nyc.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		position: relative;
+		position：fixed;
+		height: 50vh;
+		display: flex;
+	}
+	
+	.hero-content {
+		margin-left: 5vw;
+		margin-top: 10vh;
+		z-index: 5;
+		font-family: "Monserrat", sans-serif;
+		color: white;
+		max-width: 60vw;
+		max-height: 50vh;
+	}
+	
+	.class-headline-title {
+		font-size: 175%;
+		margin-bottom: 0;
+		font-weight: 700;
+	}
+	
+	.class-headline-subtitle {
+		font-size: 100%;
+		margin-top: 2.0rem;
+		font-weight: 450;
+	}
+	
+	.class-headlines-image {
+		max-height: 250px;
+		position: relative;
+		display: flex;
+		object-fit: cover;
+	}
+	
+	.image.class-headlines-image {
+		height: 250px;
+		position: relative;
+		display: flex;
+		object-fit: cover;
+	}
+	
+	.class-fake-button {
+		font-size: 75%;
+		margin-top: 1.0rem;
+		font-weight: 400;
+		padding: 1vh 2vw 1vh 2vw;
+		border: 0.8px solid white;
+		border-radius: 3px;
+	}
+}
+
+@media screen and (max-width:500px) {
+	.hero {
+		z-index: 1;
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: url("/o2o/upload/nyc.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		position: relative;
+		position：fixed;
+		height: 30vh;
+		display: flex;
+	}
+	.hero-content {
+		margin-left: 10vw;
+		margin-top: 4vh;
+		z-index: 5;
+		font-family: "Monserrat", sans-serif;
+		color: white;
+		max-width: 60vw;
+		max-height: 50vh;
+	}
+	.class-headline-title {
+		font-size: 150%;
+		margin-bottom: 0;
+		font-weight: 700;
+	}
+	.class-headline-subtitle {
+		font-size: 100%;
+		margin-top: 1rem;
+		font-weight: 450;
+	}
+	
+	.class-headlines-image {
+		max-height: 180px;
+		position: relative;
+		display: flex;
+		object-fit: cover;
+	}
+	
+	.image.class-headlines-image {
+		height: 180px;
+		position: relative;
+		display: flex;
+		object-fit: cover;
+	}
+	
+	.class-fake-button {
+		font-size: 90%;
+		font-weight: 400;
+		padding: 1vh 2vw 1vh 2vw;
+		border: 0.8px solid white;
+		border-radius: 3px;
+	}}
+	
+#id-headlines-container-outter {
+}
+
+.ui.card.class-headlines-card {
+	margin:0 auto;
+	width:85%!important;
+	overflow: hidden;
+	border-radius: 0px;
+}
+
+.ui.card.class-best-stores-card {
+	margin:0 auto;
+	width:85%!important;
+	overflow: hidden;
+}
+
+
+.image {
+	transition: .5s;
+}
+
+.class-headlines-text-title {
+	font-family:var(--global-font-family-special);
+	font-size:100%;
+	font-weight:800;
+}
+
+.content.class-headlines-content {
+	background-color: #1fc8db!important;
+	background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%)!important;
+	opacity: 0.95;
+	color: #f3f3f3;
+}
+
+.class-headlines-text-subtitle {
+	font-size:80%;
+}
+
+.class-headlines-button-set {
+	margin-top:1vh;
+	margin-left:auto;
+	margin-right:auto;
+	max-width:45%!important;
+}
+
+.large.icon.button.class-headlines-button {
+	text-align: center;
+	background-color: rgba(20,20,20,.85);
+	color: white;
+}
+
+#id-headlines-prev-button {
+	left: 0px;
+}
+
+#id-headlines-next-button {
+	right: 0px;
+}
+
+

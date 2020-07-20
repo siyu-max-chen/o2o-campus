@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.siyu.o2o.dao.UserShopLikeDao">
+  	<resultMap type="com.siyu.o2o.entity.UserShopLikeMap" id="likeMap">
+		<id column="like_id" property="userShopLikeId" />
+		<result column="user_id" property="userId" />
+		<result column="shop_id" property="shopId" />
+		<result column="last_edit_time" property="lastEditTime" />
+  	</resultMap>
+  	
+  	<select id="queryByUserIdShopId" resultMap="likeMap">
+  		SELECT 
+		s.like_id,
+		s.user_id,
+		s.shop_id,
+		s.last_edit_time
+		FROM
+		tb_like_user_shop_map AS s
+		WHERE 
+		s.user_id=#{userId}
+		AND
+		s.shop_id=#{shopId}
+  	</select>
+  	
+  	<insert
+	id="insertUserShopLike" useGeneratedKeys="true"
+	keyColumn="like_id" keyProperty="userShopLikeId">
+		INSERT INTO
+		tb_like_user_shop_map(user_id, shop_id, last_edit_time)
+		VALUES
+		(#{userId}, #{shopId}, #{lastEditTime})
+  	</insert>
+  	
+  	<delete id="deleteUserShopLike">
+		DELETE FROM
+		tb_like_user_shop_map
+		WHERE
+		user_id = #{userId}
+		AND shop_id=#{shopId}
+	</delete>
+  	
+  </mapper>

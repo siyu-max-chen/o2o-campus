@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>修改密码</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="../upload/o2o-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- <link rel="stylesheet"
+	href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+<link rel="stylesheet"
+	href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css"> -->
+<link rel="stylesheet" type="text/css"
+	href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
+	
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Inter|Merriweather&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="../resources/css/common/common.css">
+<link rel="stylesheet" href="../resources/css/local/login.css">
+<link rel="stylesheet" href="../resources/css/local/changepsw.css">
+
+</head>
+<body class="entire-container-background">
+
+	<div id="global-id-screen-container">
+
+		<!-- Header -->
+		<div class="nav-bar-o2o">
+			<i class="huge angle left icon" id="global-id-go-back-icon"></i>
+			<div class="title-container">
+				<span class="page-title-o2o">Change Password</span>
+			</div>
+		</div>
+		
+		<div
+			class="ui container class-page-container class-regular-page-container"
+			id="changepsw-form-container">
+			<form class="ui form">
+			
+				<div class="disabled field">
+					<label><i class="user circle icon"></i> User Name</label> <input type="text" name=""
+						id="userName" placeholder="User Name">
+				</div>
+				
+				<div class="field">
+					<label><i class="key icon"></i> Current Password</label> <input type="password" name=""
+						id="password" placeholder="Current Password">
+				</div>
+				
+				<div class="field">
+					<label><i class="key icon"></i> New Password</label> <input type="password" name=""
+						id="newPassword" placeholder="New Password">
+				</div>
+				
+				<div class="field">
+					<label><i class="key icon"></i> Confirm Password</label> <input type="password" name=""
+						id="confirmPassword" placeholder="Confirm Password">
+				</div>
+				
+				
+				<div class="field" id="verifyPart">
+					<div class="item-inner">
+						<label for="j_captcha" class="item-title label"
+							id="text-verify-title" style="font-weight:800;"><i class="shield icon"></i> Verification Code</label> <input id="j_captcha"
+							name="j_captcha" type="text" class="form-control in"
+							placeholder="Verification Code" />
+						<div class="item-input right floated">
+							<img id="captcha_img" alt="点击更换" title="点击更换"
+								onclick="changeVerifyCode(this)" src="../Kaptcha" />
+						</div>
+					</div>
+				</div>
+			</form>
+			
+			<!-- 
+			<div class="ui container" id="submit-button-container">
+				<a href="#" id="submit" class="submit-button "><span
+					class="text-submit-button">Submit</span></a>
+			</div> -->
+
+			<div class="" id="submit-button-container">
+				<div class="class-submit-button-div">
+					<button id="submit" class="">Submit</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<script type='text/javascript'
+		src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+	<script type='text/javascript'
+		src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+	<script type='text/javascript'
+		src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='../resources/js/common/common.js'
+		charset='utf-8'></script>
+	<script type='text/javascript' src='../resources/js/local/changepsw.js'
+		charset='utf-8'></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+
+.row-shop {
+    border: 1px solid #999;
+    padding: .5rem;
+    border-bottom: none;
+}
+.row-shop:last-child {
+    border-bottom: 1px solid #999;
+}
+.shop-name {
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+.shop-wrap a {
+
+}
+
+.title {
+	text-align: center;
+}
+
+.text-valid {
+	color:#339900;
+	font-weight:800;
+}
+
+.text-processing {
+	color:orange;
+	font-weight:800;
+}
+
+.text-invalid {
+	color:#CC0000;
+	font-weight:800;
+}
+
+#card-title {
+	background-color:var(--global-color-base);
+}
+
+#card-title-text {
+	color:white;
+}
+
+#operate-menu {
+	margin-bottom:2vh;
+	floated:right;
+}
+
+.button-link-gray {
+	color:white;
+	font-weight:650;
+	background-color:rgb(85,85,85);
+	border-radius: 100px;
+	margin-bottom:20px;
+	padding-right:4vw;
+	padding-left:4vw;
+	padding-top:0.5vh;
+	padding-bottom:0.5vh;
+	float:right;
+	box-shadow: 0px 0px 3px #404040;
+}
+
+.button-link-gray:hover {
+	color:white;
+	font-weight:650;
+	background-color:rgb(65,65,65);
+	border-radius: 100px;
+	margin-bottom:20px;
+	padding-right:4vw;
+	padding-left:4vw;
+	padding-top:0.5vh;
+	padding-bottom:0.5vh;
+	float:right;
+}
+
+.button-link-icon-gray {
+	color:white;
+	font-weight:650;
+	background-color:rgb(85,85,85);
+	border-radius: 100px;
+	margin:1vw 1vw 1vw 1vw;
+	padding:1vw 1vw 1vw 1vw;
+	float:right;
+	text-align: center;
+    vertical-align: middle;
+}
+
+#link-shop-homepage {
+	font-weight:650;
+	color:#909090;
+}
+
+#up-menu-id {
+	box-shadow: 1px 2px 2px rgba(0,0,0,0.6);
+}
+
+#item-menu-strong-id1 {
+	font-weight:650;
+	background-color:var(--global-color-light-blue);
+}
+
+#log-out {
+	font-weight:650;
+	background-color:var(--global-color-light-red);
+}
+
+#bindOrChange {
+	font-weight:650;
+	background-color:var(--global-color-light-blue);
+}
+
+#link-shop-homepage:hover {
+	color:black;
+}
+
+.button-link-white {
+	color:white;
+}
+
+.button-link-white:hover {
+	color:white;
+}
+
+.right-floated {
+	margin-left: 5px;
+}
+
+.vertical-center {
+	vertical-align: middle;
+}
+
+#plus-button {
+	background-color: #001a1a;
+	padding-bottom:3.5vh;
+	padding-top:3.5vh;
+	padding-left:3.5vh;
+	padding-right:3.5vh;
+	border-radius: 50%;
+	position: fixed;
+	top: 80vh;
+	left: 70vw;
+	box-shadow: 0px 0px 8px #404040;
+}
+
+#plus-icon {
+	color:white;
+}

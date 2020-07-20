@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>SUI Mobile Demo</title>
+<meta name="description"
+	content="MSUI: Build mobile apps with simple HTML, CSS, and JS components.">
+<meta name="author" content="阿里巴巴国际UED前端">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="../upload/o2o-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+<!-- Google Web Fonts -->
+<link rel="stylesheet" type="text/css"
+	href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
+
+<link rel="stylesheet" href="../resources/css/common/common.css">
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Inter|Merriweather&display=swap" rel="stylesheet">
+
+
+<!-- 
+<link rel="stylesheet"
+	href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+<link rel="stylesheet"
+	href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css"> -->
+
+<link rel="apple-touch-icon-precomposed"
+	href="/assets/img/apple-touch-icon-114x114.png">
+</head>
+
+
+<body class="entire-container-background">
+<div id="global-id-screen-container">
+	<div class="nav-bar-o2o">
+		<div class="title-container">
+			<span class="page-title-o2o">Edit Shop</span>
+		</div>
+	</div>
+
+	<div class="ui container class-page-container class-regular-page-container">
+		<form class="ui form">
+			<div class="field">
+				<label>Shop Name</label> <input type="text" name="first-name"
+					id="shop-name" placeholder="Shop Name">
+			</div>
+			<div class="two fields">
+
+				<div class="field">
+					<label>Shop Category</label>
+					<div class="item-input">
+						<select id="shop-category">
+						</select>
+					</div>
+				</div>
+
+				<div class="field">
+					<label>Area</label>
+					<div class="item-input">
+						<select id="area">
+						</select>
+					</div>
+				</div>
+				
+				<div class="field">
+					<label>Prices</label>
+					<div class="item-input">
+						<select id="prices">
+							<option data-id='1'>$ (Low)</option>
+							<option data-id='2'>$$ (Relatively Low)</option>
+							<option data-id='3'>$$$ (Medium)</option>
+							<option data-id='4'>$$$$ (Relatively High)</option>
+							<option data-id='5'>$$$$$ (High)</option>
+						</select>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="field">
+				<label>Address</label> <input type="text" name="last-name"
+					id="shop-addr" placeholder="Address">
+			</div>
+
+			<div class="field">
+				<label>Phone Number</label> <input type="text" name="last-name"
+					id="shop-phone" placeholder="Phone Number">
+			</div>
+			
+				<div class="field">
+					<label>Shop Image</label>
+					<!-- <div class="item-title label">Shop Image</div> -->
+					<div class="item-input">
+						<input type="file" id="shop-img">
+					</div>
+				</div>
+
+			<div class="field">
+				<label>Shop Description</label>
+				<textarea rows="3" id="shop-desc"></textarea>
+			</div>
+
+			<div class="field">
+				<label>Verification Code</label> <input type="text" id="j_captcha"
+					name="last-name" placeholder="Verification Code">
+				<div class="item-input">
+					<img id="captcha_img" alt="点击更换" title="点击更换"
+						onclick="changeVerifyCode(this)" src="../Kaptcha">
+				</div>
+			</div>
+
+		</form>
+
+		
+		<div class="class-button-container class-button-set-container" id="submit-button-container">
+			<div class="ui buttons">
+				<button class="ui button class-button-two-button class-button-cancel" id="id-go-back-button">Back</button>
+				<div class="or"></div>
+				<button class="ui button class-button-two-button class-button-submit" id="submit">Submit</button>
+			</div>
+		</div>
+
+	</div>
+	</div>
+
+
+	<script type='text/javascript'
+		src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+		
+	<!-- 
+	<script type='text/javascript'
+		src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+	<script type='text/javascript'
+		src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script> -->
+		
+	<script type='text/javascript' src='../resources/js/common/common.js'
+		charset='utf-8'></script>
+	<script type='text/javascript'
+		src='../resources/js/shop/shopoperation.js' charset='utf-8'></script>
+</body>
+</html>

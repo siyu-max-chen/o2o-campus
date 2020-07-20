@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Register</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="../upload/o2o-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+<link rel="stylesheet" type="text/css"
+	href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+
+<!-- 
+ <link rel="stylesheet"
+	href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+<link rel="stylesheet"
+	href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css"> -->
+<link
+	href="https://fonts.googleapis.com/css?family=Abril+Fatface|Inter|Merriweather&display=swap"
+	rel="stylesheet">
+
+<link rel="stylesheet" href="../resources/css/common/common.css">
+<link rel="stylesheet" href="../resources/css/local/login.css">
+
+<body class="entire-container-background">
+	<div id="global-id-screen-container">
+
+		<div class="nav-bar-o2o">
+			<div class="title-container">
+				<span class="page-title-o2o">Register</span>
+			</div>
+		</div>
+
+		<div
+			class="ui container class-page-container class-regular-page-container">
+			<form class="ui form">
+				<div class="field">
+					<label id="id-username-title"><i class="user circle icon"></i>
+						User Name</label> <input type="text" name="first-name" id="username"
+						placeholder="User Name">
+				</div>
+
+				<div class="field">
+					<label id="id-username-title"><i class="envelope icon"></i>
+						Email</label> <input type="email" name="first-name" id="email"
+						placeholder="Email Address">
+				</div>
+
+				<div class="field">
+					<label><i class="key icon"></i> Password</label> <input
+						type="password" name="last-name" id="psw" placeholder="Password">
+				</div>
+
+				<div class="field">
+					<label><i class="key icon"></i>Confirm Password</label> <input
+						type="password" name="last-name" id="confirmPassword"
+						placeholder="Confirm Your Password">
+				</div>
+
+				<div class="field" id="verifyPart" hidden="true">
+					<div class="item-inner">
+						<label for="j_captcha" class="item-title label"
+							id="text-verify-title"><i class="shield alternate icon"></i>
+							Verify</label> <input id="j_captcha" name="j_captcha" type="text"
+							class="form-control in" placeholder="Verification Code" />
+						<div class="item-input right floated">
+							<img id="captcha_img" alt="点击更换" title="点击更换"
+								onclick="changeVerifyCode(this)" src="../Kaptcha" />
+						</div>
+					</div>
+				</div>
+
+				<div class="" id="">
+					<button class="ui icon button"
+						id="global-id-passwordhidegroup-button">
+						<i class="eye icon" id="global-id-passwordhide-icon-show"></i> <i
+							class="eye slash icon" id="global-id-passwordhide-icon-hide"
+							style="display: none"></i>
+					</button>
+				</div>
+
+				<div class="global-class-message-container">
+					<div class="ui compact message" id="global-id-message-yellow">
+						<p>Please use your own email address and keep it safe. It's
+							the only way to reset your password!</p>
+					</div>
+				</div>
+
+			</form>
+		</div>
+
+		<div class="" id="submit-button-container">
+			<div class="class-submit-button-div">
+				<button id="submit" class="">Submit</button>
+			</div>
+		</div>
+
+	</div>
+	<!-- 
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+			integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			crossorigin="anonymous"></script> -->
+
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>  -->
+
+	<script type='text/javascript'
+		src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+
+	<script type='text/javascript'
+		src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+
+	<script type='text/javascript'
+		src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='../resources/js/common/common.js'
+		charset='utf-8'></script>
+	<script type='text/javascript' src='../resources/js/local/register.js'
+		charset='utf-8'></script>
+</body>
+</html>

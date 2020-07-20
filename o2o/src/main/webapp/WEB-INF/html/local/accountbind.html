@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>登录</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="../upload/o2o-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- <link rel="stylesheet"
+	href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+<link rel="stylesheet"
+	href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css"> -->
+<link rel="stylesheet" type="text/css"
+	href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
+	
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Inter|Merriweather&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../resources/css/common/common.css">
+<link rel="stylesheet" href="../resources/css/local/accountbind.css">
+</head>
+
+<body class="entire-container-background">
+<div id="global-id-screen-container">
+	<div class="nav-bar-o2o">
+		<div class="back-icon-container title-container">
+			<a herf="#" onclick="javascript :history.back(-1);"><i
+				class="chevron left icon medium"></i></a> <span class="page-title-o2o"
+				id="page-title-location">Bind WeChat</span>
+		</div>
+	</div>
+	
+	<div class="ui container class-page-container class-regular-page-container" id="bind-form-container">
+		<form class="ui form">
+			<div class="field">
+				<input type="text" id="username" placeholder="User Name">
+			</div>
+			<div class="field">
+				<input type="password" id="psw" placeholder="Password">
+			</div>
+			<div class="field" id="verifyPart">
+				<div class="item-inner">
+					<label for="j_captcha" class="item-title label"
+						id="text-verify-title">Verify</label> <input id="j_captcha"
+						name="j_captcha" type="text" class="form-control in"
+						placeholder="Verification Code" />
+					<div class="item-input right floated">
+						<img id="captcha_img" alt="点击更换" title="点击更换"
+							onclick="changeVerifyCode(this)" src="../Kaptcha" />
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<div class="ui container" id="submit-button-container">
+			<a href="#" id="submit" class="submit-button"><span
+				class="text-submit-button">Submit</span></a>
+		</div>
+		<!-- <div class="content-block">
+			<div class="row">
+				<div class="col-50">
+					<a href="#" onclick="javascript :history.back(-1);"
+						class="button button-big button-fill button-danger">返回</a>
+				</div>
+				<div class="col-50">
+					<a href="#" class="button button-big button-fill" id="submit">提交</a>
+				</div>
+			</div>
+		</div> -->
+	</div>
+	</div>
+
+	<script type='text/javascript'
+		src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+	<script type='text/javascript'
+		src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+	<script type='text/javascript'
+		src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='../resources/js/common/common.js'
+		charset='utf-8'></script>
+	<script type='text/javascript'
+		src='../resources/js/local/accountbind.js' charset='utf-8'></script>
+</body>
+</html>

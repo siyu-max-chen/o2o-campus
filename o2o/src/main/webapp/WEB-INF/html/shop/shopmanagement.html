@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>商店管理</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="../upload/o2o-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!-- CSS -->
+<!-- 
+<link rel="stylesheet"
+	href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+<link rel="stylesheet"
+	href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css"> -->
+
+<link rel="stylesheet" type="text/css"
+	href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<link rel="stylesheet" href="../resources/css/frontend/index.css">
+<link rel="stylesheet" href="../resources/css/common/common.css">
+<link
+	href="https://fonts.googleapis.com/css?family=Abril+Fatface|Inter|Merriweather&display=swap"
+	rel="stylesheet">
+
+<link rel="stylesheet" href="../resources/css/shop/shopmanagement.css">
+
+
+</head>
+<body class="entire-container-background">
+	<div id="global-id-screen-container">
+		<div class="nav-bar-o2o">
+			<div class="title-container">
+				<span class="page-title-o2o">Shop Management</span>
+			</div>
+		</div>
+
+		<!-- Category Buttons & Preload Div -->
+		<!-- 全类查询区 -->
+
+		<div class="class-image-container">
+			<img src="upload/nyc.jpg" class="class-shop-image"
+				οnerrοr="javascript:this.src='../upload/nyc.jpg';">
+		</div>
+
+		<div class="ui one card" id="id-shop-info-card">
+			<div class="content class-shop-info-name">
+				<div id="id-shop-info-name">Jersey-Hudson Coffee</div>
+			</div>
+			<div class="content">
+				<div id="id-shop-info-category" class="class-shop-info-regular">
+					<span class="right floated" id="id-shop-info-create-time">
+						Joined in 2011 </span> Jersey-Hudson Coffee
+				</div>
+				<div id="id-shop-info-area" class="class-shop-info-regular">Jersey-Hudson
+					Coffee</div>
+				<div id="id-shop-info-address" class="class-shop-info-regular">Jersey-Hudson
+					Coffee</div>
+				<div id="id-shop-info-tel" class="class-shop-info-regular">Jersey-Hudson
+					Coffee</div>
+				<div id="id-shop-info-description" class="class-shop-info-regular">
+					Jersey-Hudson Coffee</div>
+			</div>
+			<div class="extra content">
+				<button class="ui button">Join Project</button>
+			</div>
+		</div>
+
+		<h4 class="ui horizontal divider header">
+			<i class="pencil alternate icon"></i> Management
+		</h4>
+
+		<div class="ui container" id="">
+			<div class="ui grid" id="id-icon-container">
+				<div class="row" id="id-icon-container-inner">
+					<!-- Loading Images -->
+
+					<div class="five wide column class-Column" id="id-manage-div0">
+						<a href="/o2o/shopadmin/shopoperation" id="id-manage-button0">
+							<div class="button-icon-index" id="id-manage-icon0">
+								<img src="../upload/store.png" class="index-category-icon">
+							</div>
+							<div class="text-icon-desc" id="id-manage-text0">Shop</div>
+						</a>
+					</div>
+
+					<div class="five wide column class-Column" id="id-manage-div1">
+						<a href="/o2o/shopadmin/productmanagement">
+							<div class="button-icon-index" id="id-manage-icon1">
+								<img src="../upload/goods.png" class="index-category-icon">
+							</div>
+							<div class="text-icon-desc" id="id-manage-text1">Product</div>
+						</a>
+					</div>
+
+					<div class="five wide column class-Column" id="id-manage-div2">
+						<a href="/o2o/shopadmin/productcategorymanagement">
+							<div class="button-icon-index" id="id-manage-icon2">
+								<img src="../upload/category.png" class="index-category-icon">
+							</div>
+							<div class="text-icon-desc" id="id-manage-text2">Category</div>
+						</a>
+					</div>
+
+					<div class="five wide column class-Column" id="id-manage-div3">
+						<a href="/o2o/shopadmin/awardmanagement">
+							<div class="button-icon-index" id="id-manage-icon3">
+								<img src="../upload/gift.png" class="index-category-icon">
+							</div>
+							<div class="text-icon-desc" id="id-manage-text3">Gift</div>
+						</a>
+					</div>
+
+					<div class="five wide column class-Column" id="id-manage-div4">
+						<a href="/o2o/shopadmin/productbuycheck">
+							<div class="button-icon-index" id="id-manage-icon4">
+								<img src="../upload/statistics.png" class="index-category-icon">
+							</div>
+							<div class="text-icon-desc" id="id-manage-text4">Revenue</div>
+						</a>
+					</div>
+
+					<div class="five wide column class-Column" id="id-manage-div5">
+						<a href="/o2o/shopadmin/awarddelivercheck">
+							<div class="button-icon-index" id="id-manage-icon5">
+								<img src="../upload/gifts.png" class="index-category-icon">
+							</div>
+							<div class="text-icon-desc" id="id-manage-text5">Redeem</div>
+						</a>
+					</div>
+
+					<div class="five wide column class-Column" id="id-manage-div6">
+						<a href="/o2o/shopadmin/usershopcheck">
+							<div class="button-icon-index" id="id-manage-icon6">
+								<img src="../upload/reward.png" class="index-category-icon">
+							</div>
+							<div class="text-icon-desc" id="id-manage-text6">Point</div>
+						</a>
+					</div>
+
+					<div class="five wide column class-Column" id="id-manage-div7">
+						<a href="/o2o/shopadmin/shopauthmanagement">
+							<div class="button-icon-index" id="id-manage-icon7">
+								<img src="../upload/authorization.png"
+									class="index-category-icon">
+							</div>
+							<div class="text-icon-desc" id="id-manage-text7">Authorize</div>
+						</a>
+					</div>
+
+					<div class="five wide column class-Column" id="id-manage-div7">
+						<a href="/o2o/shopadmin/shoplist">
+							<div class="button-icon-index" id="id-manage-icon7">
+								<img src="../upload/undo.png" class="index-category-icon">
+							</div>
+							<div class="text-icon-desc" id="id-manage-text7">Back</div>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Scripts -->
+	<!-- 
+	<script type='text/javascript'
+		src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+	<script type='text/javascript'
+		src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+	<script type='text/javascript'
+		src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script> -->
+
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.min.js"></script>
+
+	<script type='text/javascript' src='../resources/js/common/common.js'
+		charset='utf-8'></script>
+	<script type='text/javascript'
+		src='../resources/js/shop/shopmanagement.js' charset='utf-8'></script>
+
+
+</body>
+</html>

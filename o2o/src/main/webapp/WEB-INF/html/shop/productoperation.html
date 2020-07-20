@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>商品编辑</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="../upload/o2o-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+<!-- Google Web Fonts -->
+<link rel="stylesheet" type="text/css"
+	href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
+
+<link rel="stylesheet" href="../resources/css/common/common.css">
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Inter|Merriweather&display=swap" rel="stylesheet">
+
+<!-- 
+<link rel="stylesheet"
+	href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+<link rel="stylesheet"
+	href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css"> -->
+	
+	
+<link rel="stylesheet"
+	href="../resources/css/shop/productmanagement.css">
+</head>
+
+
+<body class="entire-container-background">
+	<div class="nav-bar-o2o">
+		<div class="title-container">
+			<span class="page-title-o2o">Edit Product</span>
+		</div>
+	</div>
+
+	<div class="ui container class-page-container class-regular-page-container">
+		<form class="ui form">
+			<div class="field">
+				<label>Product Name</label> <input type="text" name="first-name"
+					id="product-name" placeholder="Product Name">
+			</div>
+			<div class="two fields">
+				<div class="field">
+					<label>Product Category</label>
+					<div class="item-input">
+						<select id="category">
+						</select>
+					</div>
+				</div>
+			</div>
+			
+			<div class="two fields">
+				<div class="field">
+					<label>Priority</label> <input type="text" name="last-name"
+						id="priority" placeholder="Product shows first with larger priority">
+				</div>
+				<div class="field">
+					<label>Point</label> <input type="text" name="last-name"
+						id="point" placeholder="Reward Point of the Product">
+				</div>
+			</div>
+			
+			<div class="two fields">
+				<div class="field">
+					<label>Price</label> <input type="text" name="last-name"
+						id="normal-price" placeholder="Price">
+				</div>
+				<div class="field">
+					<label>Discount Price</label> <input type="text" name="last-name"
+						id="promotion-price" placeholder="Price with Discount">
+				</div>
+			</div>
+
+			
+				<div class="field">
+					<label>Product Thumbnail Image</label>
+					<!-- <div class="item-title label">Shop Image</div> -->
+					<div class="item-input">
+						<input type="file" id="small-img">
+					</div>
+				</div>
+			
+				<div class="field detail-img-div">
+					<label>Product Detailed Image</label>
+					<div class="item-input" id="detail-img">
+						<input type="file" id="" class="detail-img">
+					</div>
+				</div>
+
+			<div class="field">
+				<label>Product Description</label>
+				<textarea rows="3" id="product-desc"></textarea>
+			</div>
+
+			<div class="field">
+				<label>Verification Code</label> <input type="text" id="j_captcha"
+					name="last-name" placeholder="Verification Code">
+				<div class="item-input">
+					<img id="captcha_img" alt="点击更换" title="点击更换"
+						onclick="changeVerifyCode(this)" src="../Kaptcha">
+				</div>
+			</div>
+		</form>
+
+		<div class="class-button-container class-button-set-container" id="submit-button-container">
+			<div class="ui buttons">
+				<button class="ui button class-button-two-button class-button-cancel" id="back">Back</button>
+				<div class="or"></div>
+				<button class="ui button class-button-two-button class-button-submit" id="submit">Submit</button>
+			</div>
+		</div>
+	</div>
+	
+
+	<script type='text/javascript'
+		src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+	<script type='text/javascript'
+		src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+	<script type='text/javascript'
+		src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='../resources/js/common/common.js'
+		charset='utf-8'></script>
+	<script type='text/javascript'
+		src='../resources/js/shop/productoperation.js' charset='utf-8'></script>
+</body>
+</html>
