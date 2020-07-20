@@ -13,7 +13,7 @@ import org.apache.commons.lang3.StringUtils;
 
 public class URLShortnerUtil {
 
-   private static final String GOOGLE_SHORTEN_URL = "https://www.googleapis.com/urlshortener/v1/url?key=AIzaSyCZ6gUYLIulANRhWm3wy7VbAIsrreum6EE";
+   private static final String GOOGLE_SHORTEN_URL = "????";
 
 
    public static String shortURLGoogle(String longURL) {
@@ -24,7 +24,7 @@ public class URLShortnerUtil {
          HashMap e = new HashMap();
          e.put("longUrl", longURL);
          String requestBody = (new JSONSerializer()).serialize(e);
-         con = (HttpsURLConnection)(new URL("https://www.googleapis.com/urlshortener/v1/url?key=AIzaSyCZ6gUYLIulANRhWm3wy7VbAIsrreum6EE")).openConnection();
+         con = (HttpsURLConnection)(new URL("????")).openConnection();
          con.setDoOutput(true);
          con.setDoInput(true);
          con.setRequestMethod("POST");
